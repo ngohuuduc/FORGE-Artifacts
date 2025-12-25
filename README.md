@@ -28,7 +28,7 @@ For more information about the dataset and research findings, please refer to ou
   <img src="assets/framework.png" alt="FORGE banner" width="1000"/>
 </p>
 
-FORGE is an automated framework that constructs comprehensive smart contract vulnerability datasets from real-world audit reports. By leveraging large language models (LLMs) and the Common Weakness Enumeration (CWE) standard, FORGE addresses key challenges in existing vulnerability datasets: labor-intensive and error-prone of manual construction, inconsistent classification standards, and limited scalability. The FORGE framework consists of four main modules:
+FORGE is an automated framework that constructs comprehensive smart contract vulnerability datasets from real-world audit reports. By leveraging large language models (LLMs) and the Common Weakness Enumeration (CWE) standard, FORGE addresses key challenges in existing vulnerability datasets: labor-intensive, error-prone manual construction; inconsistent classification standards; and limited scalability. The FORGE framework consists of four main modules:
 
 - **Semantic Chunker**: Segments audit reports into meaningful, self-contained chunks
 - **MapReduce Extractor**: Extracts and aggregates vulnerability information from report chunks
@@ -65,7 +65,7 @@ pip install -r requirements.txt
 
 ### Quick Start
 
-Run the FORGE to extract, classify and fetch source code on a sample document:
+Run the FORGE to extract, classify, and fetch source code on a sample document:
 
 ```bash
 # Using uv (recommended)
@@ -106,7 +106,7 @@ uv run main.py fetch -t path/to/project/json
 
 #### Benchmark Construction
 
-A potential use case for FORGE is to construct small-scale benchmark datasets for specific vulnerabilities from security artifacts by editing the prompts in [src/core/invoker.py](src/core/invoker.py). We are considering decoupling this feature in the next release and enabling the construction of task-specific workflows.
+A potential use case for FORGE is to construct small-scale benchmark datasets for specific vulnerabilities from security artifacts by editing the prompts in [src/core/invoker.py](src/core/invoker.py).
 
 #### Additional Options
 
@@ -124,8 +124,9 @@ We have made our dataset available in the following ways:
 
 - **Vulnerability Information**: Available in the `dataset/results` directory of this repository.
 - **Solidity Code Files**: Available in the `dataset/contracts` directory of this repository.
-- **Audit Reports**: Due to GitHub storage limitations, these are hosted on Cloudflare R2 storage. You can download them using API tokens with any method you prefer. The `dataset/access_reports.ipynb` notebook provides a usage example.
-
+- **Audit Reports**: Due to GitHub storage limitations, audit reports are available through two download options:
+  - **Option 1 - Cloudflare R2:** Download via API tokens using any method you prefer. See [dataset/access_reports.ipynb](dataset/access_reports.ipynb) for a usage example.
+  - **Option 2 - Google Drive:** Direct download from [https://drive.google.com/file/d/10u9DrWvtzw8Bo-7jig2KWmua2bS8NPq9](https://drive.google.com/file/d/10u9DrWvtzw8Bo-7jig2KWmua2bS8NPq9).
 
 ---
 
