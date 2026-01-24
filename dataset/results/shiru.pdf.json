@@ -47,10 +47,16 @@
             "id": 2,
             "category": {
                 "1": [
-                    "CWE-710"
+                    "CWE-664"
                 ],
                 "2": [
-                    "CWE-1126"
+                    "CWE-665"
+                ],
+                "3": [
+                    "CWE-908"
+                ],
+                "4": [
+                    "CWE-457"
                 ]
             },
             "title": "L12 - Using Variables before Declaration",

@@ -83,10 +83,10 @@
             "id": 4,
             "category": {
                 "1": [
-                    "CWE-664"
+                    "CWE-710"
                 ],
                 "2": [
-                    "CWE-665"
+                    "CWE-1126"
                 ]
             },
             "title": "Immutable Declaration Improvement (IDI)",

@@ -12,39 +12,5 @@
             "BrickInfinity": "contracts/1-brick/BrickInfinity"
         }
     },
-    "findings": [
-        {
-            "id": 0,
-            "category": {
-                "1": [
-                    "CWE-284"
-                ],
-                "2": [
-                    "CWE-285"
-                ],
-                "3": [
-                    "CWE-732"
-                ]
-            },
-            "title": "Lack of Fee Exclusion",
-            "description": "The contract does not exclude fees for certain decentralized applications like launchpads and lockers, limiting its operability with them.",
-            "severity": "n/a",
-            "location": "Contract, Overview"
-        },
-        {
-            "id": 1,
-            "category": {
-                "1": [
-                    "CWE-697"
-                ],
-                "2": [
-                    "CWE-1025"
-                ]
-            },
-            "title": "Misinterpreting Liquidity Addition",
-            "description": "A malicious user can send 1 token to the pair address, causing the contract to wrongly assume that liquidity has been added.",
-            "severity": "n/a",
-            "location": "Contract, Overview"
-        }
-    ]
+    "findings": []
 }

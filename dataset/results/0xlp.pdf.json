@@ -80,10 +80,10 @@
             "id": 4,
             "category": {
                 "1": [
-                    "CWE-691"
+                    "CWE-664"
                 ],
                 "2": [
-                    "CWE-431"
+                    "CWE-221"
                 ]
             },
             "title": "Missing Events Emission",

@@ -1,4 +1,5 @@
 artifacts
+artifacts.tar.gz
 .DS_Store
 .vscode
 # Byte-compiled / optimized / DLL files

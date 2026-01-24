@@ -23,10 +23,10 @@
                     "CWE-665"
                 ],
                 "3": [
-                    "CWE-909"
+                    "CWE-908"
                 ],
                 "4": [
-                    "CWE-456"
+                    "CWE-457"
                 ]
             },
             "title": "IDI - Immutable Declaration Improvement",

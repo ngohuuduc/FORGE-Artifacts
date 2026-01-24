@@ -74,10 +74,10 @@
             "id": 4,
             "category": {
                 "1": [
-                    "CWE-703"
+                    "CWE-682"
                 ],
                 "2": [
-                    "CWE-754"
+                    "CWE-369"
                 ]
             },
             "title": "ZD - Zero Division",
