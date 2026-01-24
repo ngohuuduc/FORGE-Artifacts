@@ -86,7 +86,7 @@
                     "CWE-697"
                 ],
                 "2": [
-                    "CWE-185"
+                    "CWE-1025"
                 ]
             },
             "title": "Unnecessary Boolean equality",

@@ -25,7 +25,7 @@
             },
             "title": "Unnecessary complexity in toXLengthString functions in PoaCommon",
             "description": "Too complex and can be substituted by a simpler version with a single assembly block.",
-            "severity": "n/a",
+            "severity": "medium",
             "location": "PoaCommon contract, toXLengthString functions"
         },
         {
@@ -37,7 +37,7 @@
             },
             "title": "No plan for how a physical tokenized asset would handle a chain split",
             "description": "In the event of an unplanned contentious hard fork, there would be two blockchain assets for each physical one.",
-            "severity": "n/a",
+            "severity": "medium",
             "location": "System-wide issue"
         },
         {
@@ -52,7 +52,7 @@
             },
             "title": "Usage of random storage slots in the Proxy adds too much complexity",
             "description": "Promotes dense code and may introduce unknown vulnerabilities.",
-            "severity": "n/a",
+            "severity": "medium",
             "location": "Proxy contract, usage of randomized storage slots"
         },
         {
@@ -67,25 +67,25 @@
             },
             "title": "Unnecessary usage of low-level .call() method",
             "description": "Unnecessary and possibly dangerous usage of the low-level .call() method.",
-            "severity": "n/a",
+            "severity": "medium",
             "location": "PoA-related contracts, usage of .call() method"
         },
         {
             "id": 4,
             "category": {
                 "1": [
-                    "CWE-697"
+                    "CWE-707"
                 ],
                 "2": [
-                    "CWE-1023"
+                    "CWE-20"
                 ],
                 "3": [
-                    "CWE-839"
+                    "CWE-1284"
                 ]
             },
             "title": "Withdraw method does not check if balance is sufficient for the withdrawal",
             "description": "Does not check that balance is greater than the amount being requested.",
-            "severity": "n/a",
+            "severity": "low",
             "location": "BrickblockAccount contract, withdrawEthFunds function"
         }
     ]

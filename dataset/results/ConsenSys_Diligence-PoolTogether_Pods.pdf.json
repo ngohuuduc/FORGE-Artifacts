@@ -143,14 +143,14 @@
             "id": 8,
             "category": {
                 "1": [
-                    "CWE-697"
+                    "CWE-707"
                 ],
                 "2": [
-                    "CWE-1025"
+                    "CWE-20"
                 ]
             },
             "title": "Pod.setManager() checks validity of wrong address",
-            "description": "Checking the validity of the wrong address in setManager() function.",
+            "description": "The function Pod.setManager() allows the owner of the Pod contract to change the Pod’s manager . It checks that the value of the existing  manager  in storage is nonzero. This ispresumably intended to ensure that the  owner  has provided a valid  newManager  parameterin calldata.The current check will always pass once the contract is initialized with a nonzero  manager .But, the contract can currently be initialized with a manager of  IPodManager(address(0)). In this case, the check would prevent the manager from ever being updated.",
             "severity": "low",
             "location": "Pod.sol:L233-L240"
         }

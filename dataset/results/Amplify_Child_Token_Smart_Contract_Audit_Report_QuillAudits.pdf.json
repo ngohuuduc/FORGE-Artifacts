@@ -17,10 +17,10 @@
             "id": 0,
             "category": {
                 "1": [
-                    "CWE-697"
+                    "CWE-707"
                 ],
                 "2": [
-                    "CWE-1023"
+                    "CWE-20"
                 ]
             },
             "title": "Lack of Input Validation",

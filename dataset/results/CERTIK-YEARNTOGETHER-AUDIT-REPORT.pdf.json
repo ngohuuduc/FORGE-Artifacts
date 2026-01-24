@@ -74,10 +74,13 @@
             "id": 4,
             "category": {
                 "1": [
-                    "CWE-697"
+                    "CWE-664"
                 ],
                 "2": [
-                    "CWE-1024"
+                    "CWE-704"
+                ],
+                "3": [
+                    "CWE-681"
                 ]
             },
             "title": "LCB-03 UNSAFE CAST",

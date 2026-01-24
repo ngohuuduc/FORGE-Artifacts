@@ -86,13 +86,10 @@
             "id": 5,
             "category": {
                 "1": [
-                    "CWE-284"
+                    "CWE-703"
                 ],
                 "2": [
-                    "CWE-285"
-                ],
-                "3": [
-                    "CWE-863"
+                    "CWE-754"
                 ]
             },
             "title": "L16 - Validate Variable Setters",

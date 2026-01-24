@@ -140,13 +140,10 @@
             "id": 9,
             "category": {
                 "1": [
-                    "CWE-697"
+                    "CWE-691"
                 ],
                 "2": [
-                    "CWE-1025"
-                ],
-                "3": [
-                    "CWE-20"
+                    "CWE-841"
                 ]
             },
             "title": "Token transfer to the wrong account correctness",

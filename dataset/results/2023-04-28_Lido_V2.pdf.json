@@ -215,10 +215,10 @@
             "id": 14,
             "category": {
                 "1": [
-                    "CWE-697"
+                    "CWE-710"
                 ],
                 "2": [
-                    "CWE-1025"
+                    "CWE-570"
                 ]
             },
             "title": "Extra if statement in _checkConsensus method",

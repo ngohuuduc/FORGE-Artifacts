@@ -92,7 +92,10 @@
             "id": 5,
             "category": {
                 "1": [
-                    "CWE-20"
+                    "CWE-703"
+                ],
+                "2": [
+                    "CWE-754"
                 ]
             },
             "title": "Validate Variable Setters",

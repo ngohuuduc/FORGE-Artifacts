@@ -116,7 +116,7 @@
                     "CWE-703"
                 ],
                 "2": [
-                    "CWE-755"
+                    "CWE-754"
                 ]
             },
             "title": "L16 - Validate Variable Setters",

@@ -116,10 +116,10 @@
             "id": 6,
             "category": {
                 "1": [
-                    "CWE-697"
+                    "CWE-707"
                 ],
                 "2": [
-                    "CWE-1023"
+                    "CWE-20"
                 ]
             },
             "title": "W6: Lack of cross-chain token ID validation",

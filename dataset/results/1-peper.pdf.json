@@ -29,10 +29,10 @@
             "id": 1,
             "category": {
                 "1": [
-                    "CWE-697"
+                    "CWE-710"
                 ],
                 "2": [
-                    "CWE-1025"
+                    "CWE-571"
                 ]
             },
             "title": "Redundant Conditional Statement",

@@ -349,7 +349,7 @@
             },
             "title": "Presale - contributionToken double cast and invalid comparison",
             "description": "Invalid comparison of contract type against address(0x00) and double casting the token to ERC20.",
-            "severity": "n/a",
+            "severity": "medium",
             "location": "Presale.sol:L163-L170"
         },
         {

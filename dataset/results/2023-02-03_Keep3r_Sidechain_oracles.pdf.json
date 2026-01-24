@@ -95,13 +95,13 @@
             "id": 6,
             "category": {
                 "1": [
-                    "CWE-697"
+                    "CWE-703"
                 ],
                 "2": [
-                    "CWE-1023"
+                    "CWE-755"
                 ],
                 "3": [
-                    "CWE-478"
+                    "CWE-392"
                 ]
             },
             "title": "Revert transaction",

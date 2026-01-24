@@ -58,7 +58,7 @@
             },
             "title": "An incorrect interface version definition",
             "description": "Incorrect pool versioning process, leading to wrong method calls.",
-            "severity": "low",
+            "severity": "medium",
             "location": "CurveHandler.sol#L183"
         },
         {
@@ -88,7 +88,7 @@
             },
             "title": "GenericOracle public frontrun for `initialize()`",
             "description": "Anyone can frontrun the official initialize() call, setting malicious oracles.",
-            "severity": "high",
+            "severity": "medium",
             "location": "oracles/GenericOracle.sol#L20-L24"
         },
         {
@@ -103,7 +103,7 @@
             },
             "title": "ChainlinkOracle fails to return WBTC price, pools with WBTC are not supported",
             "description": "`ChainlinkOracle` does not support Curve pools with WBTC.",
-            "severity": "low",
+            "severity": "medium",
             "location": "ChainlinkOracle contract"
         },
         {
@@ -118,7 +118,7 @@
             },
             "title": "Reentrancy in `GovernanceProxy._executeChange()`",
             "description": "Check-Effect-Interaction pattern violation, leading to unforeseen consequences.",
-            "severity": "high",
+            "severity": "medium",
             "location": "GovernanceProxy.sol#L168-L172"
         },
         {
@@ -148,7 +148,7 @@
             },
             "title": "GovernanceProxy pending change cannot expire",
             "description": "Pending changes accumulate without expiration.",
-            "severity": "low",
+            "severity": "medium",
             "location": "GovernanceProxy contract"
         },
         {
@@ -175,7 +175,7 @@
             },
             "title": "ChainlinkOracle integration problems",
             "description": "Several shortcomings in the interaction with Chainlink, including not considering abandoned feeds, using deprecated `answeredInRound`, and not checking for stale prices.",
-            "severity": "n/a",
+            "severity": "medium",
             "location": "ChainlinkOracle.sol"
         },
         {
@@ -190,7 +190,7 @@
             },
             "title": "`ChainlinkOracle.getUSDPrice()` price check issue",
             "description": "The check for `price_ != 0` should be `price_ > 0`.",
-            "severity": "n/a",
+            "severity": "medium",
             "location": "ChainlinkOracle.sol, `_getPrice()` function"
         },
         {

@@ -182,15 +182,18 @@
             "id": 12,
             "category": {
                 "1": [
-                    "CWE-697"
+                    "CWE-284"
                 ],
                 "2": [
-                    "CWE-1025"
+                    "CWE-285"
+                ],
+                "3": [
+                    "CWE-863"
                 ]
             },
             "title": "Gate modifier incorrect balance check",
-            "description": "Gate modifier in Modifiers.sol incorrectly checks for phase 2 NFT ownership.",
-            "severity": "n/a",
+            "description": "In src/contracts/core/common/Modifiers.sol:190, the gate modifier validates if the message sender owns different Quest For Kresk NFTs for each gated phase. The issue is that the check for phase 2 will pass if the user has 'either phase 1 or phase 2' NFTs, while intuitively, it should require that the user has 'both phase 1 and phase 2' NFTs. This issue's validity depends on the gating mechanism's expected behavior. Recommendation We recommend validating if the current check is intended or updating the gate modifier otherwise.",
+            "severity": "low",
             "location": "Modifiers.sol, gate modifier"
         },
         {

@@ -194,10 +194,7 @@
             "id": 11,
             "category": {
                 "1": [
-                    "CWE-697"
-                ],
-                "2": [
-                    "CWE-1025"
+                    "CWE-710"
                 ]
             },
             "title": "Faulty error messages",

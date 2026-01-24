@@ -131,10 +131,10 @@
             "id": 7,
             "category": {
                 "1": [
-                    "CWE-707"
+                    "CWE-703"
                 ],
                 "2": [
-                    "CWE-20"
+                    "CWE-754"
                 ]
             },
             "title": "Validate variable setters",

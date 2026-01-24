@@ -374,7 +374,7 @@
                     "CWE-703"
                 ],
                 "2": [
-                    "CWE-20"
+                    "CWE-754"
                 ]
             },
             "title": "Validate Variable Setters",

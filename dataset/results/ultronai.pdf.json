@@ -102,7 +102,14 @@
         },
         {
             "id": 6,
-            "category": {},
+            "category": {
+                "1": [
+                    "CWE-703"
+                ],
+                "2": [
+                    "CWE-754"
+                ]
+            },
             "title": "L16 - Validate Variable Setters",
             "description": "The contract does not validate variable setters.",
             "severity": "low",

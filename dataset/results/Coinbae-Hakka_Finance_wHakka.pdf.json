@@ -47,10 +47,13 @@
             "id": 2,
             "category": {
                 "1": [
-                    "CWE-697"
+                    "CWE-664"
                 ],
                 "2": [
-                    "CWE-1025"
+                    "CWE-669"
+                ],
+                "3": [
+                    "CWE-829"
                 ]
             },
             "title": "Timestamp usage in stakingRateModel.stakingRateMax()",
