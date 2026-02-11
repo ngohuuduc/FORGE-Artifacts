@@ -1,3 +1,3 @@
-[submodule "FORGE-Curated"]
-	path = FORGE-Curated
+[submodule "dataset-curated"]
+	path = dataset-curated
 	url = https://github.com/shenyimings/FORGE-Curated
