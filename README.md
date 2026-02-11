@@ -13,11 +13,11 @@ Specifically, it includes the [source code](src/) of the FORGE framework, the [d
 ## News
 
 - **[2026-02-11] 🔥 We have released [FORGE-Curated](https://github.com/shenyimings/FORGE-Curated): A curated smart contract vulnerability dataset with moderate size, higher quality, and enhanced feasibility!**
-- **[2025-06-20] 🎉 Our paper has been directly accepted by ICSE'26 Round 1 (Direct Acceptance Rate: 9.2%, 60/646). Can't wait to see you in Rio de Janeiro!**
+- **[2025-06-20] 🎉 Our [paper](http://arxiv.org/abs/2506.18795) has been directly accepted by ICSE'26 Round 1 (Direct Acceptance Rate: 9.2%, 60/646). Can't wait to see you in Rio de Janeiro!**
 - **[2025-03-12] ✨ We have released the largest smart contract vulnerability dataset FORGE-Dataset, together with the source code of FORGE, the first automated vulnerability dataset construction framework.**
 
 > [!IMPORTANT]  
-> Following our commitment to responsible maintenance outlined in the paper, we have collected new high-quality audit reports released between December 2025 and February 2026 based on feedback and suggestions from early adopters. With manual verification, we have created **[FORGE-Curated](https://github.com/shenyimings/FORGE-Curated)**, a curated moderate-scale EVM smart contract vulnerability dataset that is particularly suitable for tasks such as **LLM benchmark evaluation**. We strongly recommend users with similar needs to consider using the FORGE-Curated.
+> Following our commitment to responsible maintenance outlined in the paper, we have collected new high-quality audit reports released between December 2024 and February 2026 based on feedback and suggestions from early adopters. With manual verification, we have created **[FORGE-Curated](https://github.com/shenyimings/FORGE-Curated)**, a curated moderate-scale EVM smart contract vulnerability dataset that is particularly suitable for tasks such as **LLM benchmark evaluation**. We strongly recommend users with similar needs to consider using the FORGE-Curated.
 
 
 
