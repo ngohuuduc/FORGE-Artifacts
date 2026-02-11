@@ -1,24 +1,25 @@
-# FORGE-Artifact
+# FORGE: An LLM-driven Framework for Large-Scale Smart Contract Vulnerability Dataset Construction.
 
-This repository contains the artifacts for the paper ["FORGE: An LLM-driven Framework for Large-Scale Smart Contract Vulnerability Dataset Construction."](http://arxiv.org/abs/2506.18795)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b)](http://arxiv.org/abs/2506.18795)
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=shenyimings.FORGE-Artifacts)
+![Python](https://img.shields.io/badge/Python-3.11+-blue)
+
+
+This repository contains the artifacts for the paper accepted at [ICSE'26](http://arxiv.org/abs/2506.18795)
 
 Specifically, it includes the [source code](src/) of the FORGE framework, the [dataset](dataset/) constructed by FORGE, and the [evaluation results](evaluation/).
 
-## References
 
-For more information about the dataset and research findings, please refer to our paper accepted by **ICSE 2026**: 
+## News
 
-```bibtex
-@misc{chen2025forgellmdrivenframeworklargescale,
-      title={FORGE: An LLM-driven Framework for Large-Scale Smart Contract Vulnerability Dataset Construction}, 
-      author={Jiachi Chen and Yiming Shen and Jiashuo Zhang and Zihao Li and John Grundy and Zhenzhe Shao and Yanlin Wang and Jiashui Wang and Ting Chen and Zibin Zheng},
-      year={2025},
-      eprint={2506.18795},
-      archivePrefix={arXiv},
-      primaryClass={cs.CR},
-      url={https://arxiv.org/abs/2506.18795}, 
-}
-```
+- **[2026-02-11] 🔥 We have released [FORGE-Curated](https://github.com/shenyimings/FORGE-Curated): A curated smart contract vulnerability dataset with moderate size, higher quality, and enhanced feasibility!**
+- **[2025-06-20] 🎉 Our paper has been directly accepted by ICSE'26 Round 1 (Direct Acceptance Rate: 9.2%, 60/646). Can't wait to see you in Rio de Janeiro!**
+- **[2025-03-12] ✨ We have released the largest smart contract vulnerability dataset FORGE-Dataset, together with the source code of FORGE, the first automated vulnerability dataset construction framework.**
+
+> [!IMPORTANT]  
+> Following our commitment to responsible maintenance outlined in the paper, we have collected new high-quality audit reports released between December 2025 and February 2026 based on feedback and suggestions from early adopters. With manual verification, we have created **[FORGE-Curated](https://github.com/shenyimings/FORGE-Curated)**, a curated moderate-scale EVM smart contract vulnerability dataset that is particularly suitable for tasks such as **LLM benchmark evaluation**. We strongly recommend users with similar needs to consider using the FORGE-Curated.
+
+
 
 ## FORGE Framework
 
@@ -177,6 +178,21 @@ The CWE classification results for vulnerability classifications by authors acro
 
 ---
 
+## References
+
+For more information about the dataset and research findings, please refer to our paper accepted by **ICSE 2026**: 
+
+```bibtex
+@misc{chen2025forgellmdrivenframeworklargescale,
+      title={FORGE: An LLM-driven Framework for Large-Scale Smart Contract Vulnerability Dataset Construction}, 
+      author={Jiachi Chen and Yiming Shen and Jiashuo Zhang and Zihao Li and John Grundy and Zhenzhe Shao and Yanlin Wang and Jiashui Wang and Ting Chen and Zibin Zheng},
+      year={2025},
+      eprint={2506.18795},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR},
+      url={https://arxiv.org/abs/2506.18795}, 
+}
+```
 
 ## Contributing
 
