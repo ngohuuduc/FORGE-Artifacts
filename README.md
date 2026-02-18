@@ -17,7 +17,7 @@ Specifically, it includes the [source code](src/) of the FORGE framework, the [d
 - **[2025-03-12] ✨ We have released the largest smart contract vulnerability dataset FORGE-Dataset, together with the source code of FORGE, the first automated vulnerability dataset construction framework.**
 
 > [!IMPORTANT]  
-> Following our commitment to responsible maintenance outlined in the paper, we have collected new high-quality audit reports released between December 2024 and February 2026 based on feedback and suggestions from early adopters. With manual verification, we have created **[FORGE-Curated](https://github.com/shenyimings/FORGE-Curated)**, a curated moderate-scale EVM smart contract vulnerability dataset that is particularly suitable for tasks such as **LLM benchmark evaluation**. We strongly recommend users with similar needs to consider using the FORGE-Curated.
+> Following our commitment to responsible maintenance outlined in the paper, we have collected new high-quality audit reports released between December 2024 and February 2026 based on feedback and suggestions from early adopters. With continuously manual verification, we have created **[FORGE-Curated](https://github.com/shenyimings/FORGE-Curated)**, a curated moderate-scale EVM smart contract vulnerability dataset that is particularly suitable for tasks such as **LLM benchmark evaluation**. We strongly recommend users with similar needs to consider using the FORGE-Curated.
 
 
 
@@ -159,7 +159,9 @@ The dataset contains 81,390 Solidity files and 27,497 vulnerabilities across 296
 
 You can use `RQ1/statistic.ipynb` to analyze and summarize the relevant data within our dataset.
 
-> NOTE: This dataset is dynamically maintained through a community-driven issue system and may differ from the current records.
+> [!NOTE]
+>
+> This dataset is dynamically maintained through a community-driven issue system and may differ from the current records.
 
 
 ### RQ2
