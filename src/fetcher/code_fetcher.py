@@ -101,7 +101,7 @@ class GithubFetcher(BaseFetcher):
 
         # Clone the repository
         try:
-            git.Repo.clone_from(url_info.git_url, output_path)
+            git.Repo.clone_from(url_info.git_url, output_path,kill_after_timeout=60) 
 
             # Checkout specific branch or commit if specified
             if url_info.branch:
