@@ -89,8 +89,9 @@ class TestFetcherCloneTimeout(unittest.TestCase):
             os.unlink(config_path)
 
     def test_load_timeout_fallback_when_config_missing(self):
+        missing_path = os.path.join(tempfile.gettempdir(), "forge-non-existent-config.yaml")
         self.assertEqual(
-            _load_fetcher_clone_timeout("/tmp/forge-non-existent-config.yaml"),
+            _load_fetcher_clone_timeout(missing_path),
             DEFAULT_CLONE_TIMEOUT,
         )
 

@@ -1,8 +1,6 @@
 import os
 import re
 import json
-import os
-import json
 import yaml
 from loguru import logger
 from core.models import ProjectInfo, FetchObject
@@ -17,10 +15,28 @@ DEFAULT_CLONE_TIMEOUT = 60
 
 def _load_fetcher_clone_timeout(config_path: str = "config.yaml") -> int:
     try:
-        with open(config_path, "r", encoding="utf-8") as f:
-            config = yaml.safe_load(f) or {}
+        fallback_config_path = os.path.abspath(
+            os.path.join(os.path.dirname(__file__), "..", "config.yaml")
+        )
+        config_paths = [config_path]
+        if fallback_config_path not in config_paths:
+            config_paths.append(fallback_config_path)
+
+        config = {}
+        for path in config_paths:
+            if os.path.exists(path):
+                with open(path, "r", encoding="utf-8") as f:
+                    config = yaml.safe_load(f) or {}
+                break
         timeout = int(config.get("fetcher", {}).get("clone_timeout", DEFAULT_CLONE_TIMEOUT))
-        return timeout if timeout > 0 else DEFAULT_CLONE_TIMEOUT
+        if timeout <= 0:
+            logger.warning(
+                "Invalid fetcher.clone_timeout={}, fallback to {}s",
+                timeout,
+                DEFAULT_CLONE_TIMEOUT,
+            )
+            return DEFAULT_CLONE_TIMEOUT
+        return timeout
     except Exception:
         return DEFAULT_CLONE_TIMEOUT
 
