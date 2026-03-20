@@ -3,6 +3,7 @@ import re
 import json
 import os
 import json
+import yaml
 from loguru import logger
 from core.models import ProjectInfo, FetchObject
 from core.base import BaseFetcher
@@ -10,6 +11,18 @@ from fetcher.project_parser import GithubUrlParser
 from typing import List
 import git
 from github import Github, Auth
+
+DEFAULT_CLONE_TIMEOUT = 60
+
+
+def _load_fetcher_clone_timeout(config_path: str = "config.yaml") -> int:
+    try:
+        with open(config_path, "r", encoding="utf-8") as f:
+            config = yaml.safe_load(f) or {}
+        timeout = int(config.get("fetcher", {}).get("clone_timeout", DEFAULT_CLONE_TIMEOUT))
+        return timeout if timeout > 0 else DEFAULT_CLONE_TIMEOUT
+    except Exception:
+        return DEFAULT_CLONE_TIMEOUT
 
 
 class Router:
@@ -78,6 +91,7 @@ class GithubFetcher(BaseFetcher):
         super().__init__("github")
         self.github_token = os.getenv("GITHUB_TOKEN")
         self.g = None
+        self.clone_timeout = _load_fetcher_clone_timeout()
 
     def _do_fetch(self, target: str, work_dir: str) -> tuple[bool, str]:
         """
@@ -101,7 +115,9 @@ class GithubFetcher(BaseFetcher):
 
         # Clone the repository
         try:
-            git.Repo.clone_from(url_info.git_url, output_path,kill_after_timeout=60) 
+            git.Repo.clone_from(
+                url_info.git_url, output_path, kill_after_timeout=self.clone_timeout
+            )
 
             # Checkout specific branch or commit if specified
             if url_info.branch:

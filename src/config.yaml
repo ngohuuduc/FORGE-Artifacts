@@ -42,4 +42,4 @@ classifier:
 fetcher:
     mode: default  # addr_only, url_only, default
     enabled: ["github","eth","bsc","polygon"] # Enabled fetchers.
-
+    clone_timeout: 60 # Git clone timeout in seconds.
