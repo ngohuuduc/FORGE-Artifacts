@@ -7,11 +7,16 @@ jobs:
   update-submodule:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout with submodules
+      - name: Checkout (no submodules)
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.PAT_TOKEN }}
-          submodules: recursive
+          submodules: false
+
+      - name: Init and update only top-level submodule
+        run: |
+          git submodule init dataset-curated
+          git submodule update dataset-curated
 
       - name: Pull latest in submodule
         run: |
