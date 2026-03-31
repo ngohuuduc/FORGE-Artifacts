@@ -13,18 +13,19 @@ jobs:
           token: ${{ secrets.PAT_TOKEN }}
           submodules: recursive
 
-      - name: Update submodule to latest commit
+      - name: Pull latest in submodule
         run: |
-          git submodule update --remote --merge
-          if git diff --quiet; then
-            echo "Submodule already up to date, nothing to commit."
-            exit 0
-          fi
+          cd dataset-curated
+          git pull origin main
 
       - name: Commit and push
         run: |
           git config user.name "shenyimings"
           git config user.email "seuilping@outlook.com"
-          git add .
+          if git diff --quiet; then
+            echo "Submodule already up to date, nothing to commit."
+            exit 0
+          fi
+          git add dataset-curated
           git commit -m "chore: update curated dataset to latest commit [skip ci]"
           git push
