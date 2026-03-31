@@ -1,0 +1,30 @@
+name: Update Submodule to Latest
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update-submodule:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout with submodules
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
+          submodules: recursive
+
+      - name: Update submodule to latest commit
+        run: |
+          git submodule update --remote --merge
+          if git diff --quiet; then
+            echo "Submodule already up to date, nothing to commit."
+            exit 0
+          fi
+
+      - name: Commit and push
+        run: |
+          git config user.name "shenyimings"
+          git config user.email "seuilping@outlook.com"
+          git add .
+          git commit -m "chore: update curated dataset to latest commit [skip ci]"
+          git push
